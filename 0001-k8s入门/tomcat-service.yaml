@@ -1,0 +1,10 @@
+apiVersion: extensions/v1beta1
+kind: Service
+metadata:
+  name: tomcat-service
+spec:
+  spec:
+    ports:
+    - port: 8080
+    selector:
+      tier: frontend
